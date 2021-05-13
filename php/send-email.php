@@ -4,11 +4,11 @@
 $to = 'anujssmishra3@gmail.com';
 
 function url(){
-  return sprintf(
-    "%s://%s",
-    isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https' : 'http',
-    $_SERVER['SERVER_NAME']
-  );
+   $u = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https://' : 'http://';
+   $u .= $_SERVER['HTTP_HOST'];
+   $u .= $_SERVER['REQUEST_URI'];
+
+   return $u;
 }
 
 if($_POST) {
