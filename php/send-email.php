@@ -18,7 +18,7 @@ if($_POST) {
    $subject = trim(stripslashes($_POST['subject']));
    $contact_message = trim(stripslashes($_POST['message']));
 
-   <console class="log">Done</console>
+   console.log("Done")
 	if ($subject == '') { $subject = "Contact Form Submission"; }
 
    // Set Message
