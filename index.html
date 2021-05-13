@@ -610,34 +610,29 @@
           <div class="row justify-content-between">
             
             <div class="col-md-6">
-              <form name="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSfBtKzQPcK3a1gf3jcFaV9FcNA4DfjKiQWAILhBKbcYL3YTsw/formResponse?" method="POST" class="form-outline-style-v1" id="gform" target="hidden_iframe" onsubmit="submitted=true;">
+              <form name="gform" action="https://docs.google.com/forms/d/e/1FAIpQLSdn4wtw53R4N3FaUnN5ZHu9VrbDp6fw1DXpHXPPMUjMamf9wA/formResponse?usp=sf_link" method="POST" class="form-outline-style-v1" id="gform" target="hidden_iframe" onsubmit="submitted=true;">
                 <div class="form-group row mb-0">
 
                   <div class="col-lg-6 form-group gsap-reveal">
-                    <label for="entry.1629948435">Name</label>
-                    <input name="entry.1629948435" type="text" class="form-control" id="entry.1629948435">
+                    <label for="entry.1692749773">Name</label>
+                    <input type="text" name="entry.1692749773" class="form-control" id="entry.1692749773">
                   </div>
                   <div class="col-lg-6 form-group gsap-reveal">
-                    <label for="entry.1518963806">Email</label>
-                    <input name="entry.1518963806" type="email" class="form-control" id="entry.1518963806">
+                    <label for="entry.1064565765">Email</label>
+                    <input type="email" name="entry.1064565765" class="form-control" id="entry.1064565765">
                   </div>
                   <div class="col-lg-12 form-group gsap-reveal">
-                    <label for="entry.770435472">Write your message...</label>
-                    <textarea name="entry.770435472" id="entry.770435472" cols="30" rows="7" class="form-control"></textarea>
+                    <label for="entry.1631045537">Write your message...</label>
+                    <textarea name="entry.1631045537" id="entry.1631045537" cols="30" rows="7" class="form-control"></textarea>
                   </div>
                 </div>
                 <div class="form-group row gsap-reveal">
                     <div class="col-md-12 d-flex align-items-center">
                       <input type="submit" class="btn btn-outline-pill btn-custom-light mr-3" value="Send Message">
-                      <span class="submitting"></span>
                     </div>
                   </div>
               </form>
               <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-              <div id="form-message-warning" class="mt-4"></div> 
-              <div id="form-message-success">
-                Your message was sent, thank you!
-              </div>
 
             </div>
           
@@ -713,8 +708,9 @@
     <script type="text/javascript">
     $('#gform').on('submit', function(e) {
       $('#gform *').fadeOut(2000);
-      $('#gform').prepend('Your submission has been processed...');
+      $('#gform').prepend('Your message has been sent. I\'ll get back to you in some time...');
       });
     </script>
+
   </body>
 </html>
