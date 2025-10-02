@@ -1,0 +1,55 @@
+/* Base font style */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Custom scrollbar for a more modern look */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Style for the active navigation link */
+.nav-link-active {
+    color: #3b82f6; /* A nice blue color for active state */
+    font-weight: 600;
+}
+
+/* Typing cursor effect */
+#typing-effect::after {
+    content: '|';
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    from, to {
+        color: transparent;
+    }
+    50% {
+        color: #3b82f6;
+    }
+}
+
+/* Fade-in animation for sections on scroll */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}

@@ -1,9 +1,171 @@
-<html>
-  <head>
-    <title>Anuj S.S Mishra</title>
-  </head>
-  <body>
-    <br><br><BR><BR><BR><BR>
-    <h1 align="center">Coming Soon . . .</h1>
-  </body>
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - PhD Scholar Portfolio</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header id="header" class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50 transition-all duration-300">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-bold text-gray-900">
+                Your Name
+            </a>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+            <!-- Desktop Navigation -->
+            <div id="desktop-menu" class="hidden md:flex items-center space-x-8">
+                <a href="#home" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">Home</a>
+                <a href="#about" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">About</a>
+                <a href="#research" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">Research</a>
+                <a href="#publications" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">Publications</a>
+                <a href="#contact" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">Contact</a>
+            </div>
+        </nav>
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <a href="#home" class="block py-3 px-6 text-gray-600 hover:bg-gray-100">Home</a>
+            <a href="#about" class="block py-3 px-6 text-gray-600 hover:bg-gray-100">About</a>
+            <a href="#research" class="block py-3 px-6 text-gray-600 hover:bg-gray-100">Research</a>
+            <a href="#publications" class="block py-3 px-6 text-gray-600 hover:bg-gray-100">Publications</a>
+            <a href="#contact" class="block py-3 px-6 text-gray-600 hover:bg-gray-100">Contact</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home/Hero Section -->
+        <section id="home" class="min-h-screen flex items-center bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <!-- Add your photo here -->
+                <!-- <img src="https://placehold.co/150x150/e2e8f0/333?text=You" alt="Your Name" class="w-40 h-40 rounded-full mx-auto mb-8 shadow-lg"> -->
+                <h1 class="text-5xl md:text-7xl font-bold text-gray-900 mb-4">Your Name</h1>
+                <p class="text-xl md:text-2xl text-blue-600 font-semibold mb-6 h-8">
+                    <span id="typing-effect"></span>
+                </p>
+                <p class="max-w-3xl mx-auto text-lg text-gray-600">
+                    Exploring the frontiers of decentralized systems, cybersecurity, and risk management to build more secure and trustworthy digital infrastructures.
+                </p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 md:py-32 fade-in-section">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center mb-12">About Me</h2>
+                <div class="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-xl shadow-lg">
+                    <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                        I am a dedicated PhD Scholar at [Your University's Business School Name], specializing in Information Technology & Systems. My research is situated at the intersection of technology, security, and business, focusing on the transformative potential of Distributed Ledger Technologies (DLT).
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                        My primary research interests include the security and governance of blockchain systems, proactive cybersecurity strategies, and the quantification of cyber risk in complex organizational environments. I am passionate about developing robust frameworks that enhance the security and reliability of DLT applications.
+                    </p>
+                     <p class="text-lg text-gray-700 leading-relaxed">
+                        Through my work, I aim to contribute valuable insights that can help organizations navigate the complexities of adopting and securing emerging technologies, ensuring they can innovate responsibly and effectively.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Expertise Section -->
+        <section id="research" class="py-20 md:py-32 bg-white fade-in-section">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center mb-16">Research Expertise</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Card 1 -->
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                        <h3 class="text-2xl font-semibold mb-3 text-blue-700">Blockchain Systems</h3>
+                        <p class="text-gray-600">Investigating consensus mechanisms, smart contract vulnerabilities, and scalability solutions in public and private blockchain networks.</p>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                        <h3 class="text-2xl font-semibold mb-3 text-blue-700">Cybersecurity</h3>
+                        <p class="text-gray-600">Developing proactive defense models, threat intelligence frameworks, and security protocols for critical digital infrastructures.</p>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                        <h3 class="text-2xl font-semibold mb-3 text-blue-700">Cyber Risk Management</h3>
+                        <p class="text-gray-600">Creating quantitative models for assessing cyber risk and designing optimal investment strategies for security controls.</p>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                        <h3 class="text-2xl font-semibold mb-3 text-blue-700">DLT Security</h3>
+                        <p class="text-gray-600">Analyzing security challenges in various DLT architectures and exploring privacy-preserving techniques for decentralized applications.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publications" class="py-20 md:py-32 fade-in-section">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center mb-16">Selected Publications</h2>
+                <div class="max-w-4xl mx-auto space-y-8">
+                    <!-- Publication Item 1 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                        <h3 class="text-xl font-semibold text-gray-900">A Framework for Secure Smart Contract Auditing</h3>
+                        <p class="text-gray-600 mt-1"><strong>Your Name</strong>, Co-author Name, Another Co-author</p>
+                        <p class="text-gray-500 italic mt-1">Proceedings of the International Conference on Information Systems (ICIS), 2024</p>
+                        <a href="#" class="inline-block mt-3 text-blue-600 hover:underline">View Paper &rarr;</a>
+                    </div>
+                    <!-- Publication Item 2 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                        <h3 class="text-xl font-semibold text-gray-900">Quantifying Cyber Risk in Decentralized Finance (DeFi)</h3>
+                        <p class="text-gray-600 mt-1"><strong>Your Name</strong>, Co-author Name</p>
+                        <p class="text-gray-500 italic mt-1">Journal of Cybersecurity, Vol. 9, Issue 1, 2023</p>
+                        <a href="#" class="inline-block mt-3 text-blue-600 hover:underline">View Paper &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 md:py-32 bg-white fade-in-section">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold mb-4">Get In Touch</h2>
+                <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">I'm always open to discussing research, collaborations, or new ideas. Feel free to reach out.</p>
+                <div class="flex justify-center items-center space-x-6">
+                    <a href="mailto:your.email@youruniversity.edu" class="bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-blue-700 transition-colors duration-300">
+                        Email Me
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">
+                        <!-- LinkedIn SVG Icon -->
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd"/></svg>
+                    </a>
+                     <a href="#" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-blue-600 transition-colors duration-300 font-semibold">
+                        <!-- Google Scholar Icon -->
+                         <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="currentColor"><path d="M5.242 13.769L0 9.5L12 0l12 9.5l-5.242 4.269C17.548 11.249 14.978 9 12 9s-5.548 2.249-6.758 4.769zM12 10c-1.381 0-2.5 1.119-2.5 2.5s1.119 2.5 2.5 2.5 2.5-1.119 2.5-2.5S13.381 10 12 10zM12 15c-4.418 0-8 1.79-8 4v2h16v-2c0-2.21-3.582-4-8-4z"/></svg>
+                         <span class="sr-only">Google Scholar</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js" defer></script>
+</body>
 </html>
+
+
