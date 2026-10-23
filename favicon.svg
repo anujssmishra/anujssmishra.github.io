@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <style>
+    .solid { fill: #0c5a47; }
+    .open { fill: none; stroke: #0c5a47; stroke-width: 2.4; }
+    .link { stroke: #0c5a47; stroke-width: 2.4; }
+    @media (prefers-color-scheme: dark) {
+      .solid { fill: #7fd0b6; }
+      .open, .link { stroke: #7fd0b6; }
+    }
+  </style>
+  <rect class="solid" x="1.5" y="8" width="12.5" height="16" rx="2"/>
+  <path class="link" d="M14 16h4.5"/>
+  <rect class="open" x="19.2" y="9.2" width="11.3" height="13.6" rx="1.6"/>
+</svg>

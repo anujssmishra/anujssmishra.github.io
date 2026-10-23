@@ -1,45 +1,37 @@
-Personal Academic Portfolio Website
-This is a clean, modern, and fully responsive portfolio website template designed for academics, researchers, and PhD scholars. It is built with HTML, Tailwind CSS, and vanilla JavaScript.
+# anujssmishra.github.io
 
-Features
-Responsive Design: Looks great on all devices, from mobile phones to desktops.
-Interactive Elements: Includes a dynamic typing effect in the hero section and subtle fade-in animations on scroll.
-Clean & Professional: A minimalist design that puts the focus on your content.
-Easy to Customize: All content is in the index.html file, making it simple to update.
-Organized Code: Separate files for HTML, CSS, and JavaScript for better maintainability.
-How to Customize
-Open index.html: This is the main file for all your content.
-Update Personal Information:
-Change "Your Name" in the header, hero section, and footer.
-Update the text in the About Me section (<section id="about">).
-Modify the Research Expertise cards (<section id="research">).
-Add your own work to the Selected Publications section (<section id="publications">).
-Update your email and social media links in the Contact section (<section id="contact">).
-Add Your Profile Photo (Optional):
-Open index.html and find the "Home/Hero Section" (<section id="home">).
-Inside this section, you will find a commented-out <img> tag. To uncomment it, remove the <!-- from the beginning and --> from the end.
-Upload your photo (e.g., profile.jpg) to your GitHub repository along with the other files.
-Change the src attribute in the <img> tag to the name of your photo file (e.g., src="profile.jpg").
-Customize Typing Effect (Optional):
-Open script.js.
-Find the phrases array and replace the strings with your own titles or specializations.
-How to Host on GitHub Pages (for free)
-GitHub Pages allows you to host a static website directly from your GitHub repository.
+Personal academic website of Anuj S.S. Mishra, Ph.D. scholar in Information Technology & Systems at IIM Lucknow.
+Live at **https://anujssmishra.myfanverse.in** (GitHub Pages, custom domain set in `CNAME`).
 
-Step 1: Create a GitHub Repository
-Log in to your GitHub account.
-Create a new repository. Important: Name the repository your-github-username.github.io (replace your-github-username with your actual GitHub username). This is a special name that enables GitHub Pages automatically.
-Step 2: Upload Your Files
-In your new repository, click on the "Add file" button and select "Upload files".
-Drag and drop the index.html, style.css, and script.js files into the upload area. (If you're adding a photo, upload it here too).
-Click "Commit changes" at the bottom of the page.
-Step 3: Your Website is Live!
+It is a single static page with no build step: plain HTML, one stylesheet and one small script.
 
-That's it! Because you used the special your-github-username.github.io repository name, your website will be live in a few minutes.
+## Files
 
-You can access it at: https://your-github-username.github.io
+| Path | What it is |
+| --- | --- |
+| `index.html` | All page content |
+| `assets/css/site.css` | Styles, colours (light and dark), layout |
+| `assets/js/site.js` | Theme toggle, mobile menu, copy buttons, and the papers-and-talks chain in the header area |
+| `assets/fonts/` | Self-hosted Archivo and IBM Plex Mono (SIL Open Font License) |
+| `assets/img/` | Portrait crops and the social-sharing image (`og.jpg`) |
+| `CV-PhD-ANUJ-SS-MISHRA.pdf` | The CV that every "CV" link opens. Replace this file to update it; keep the name |
+| `photo.jpeg` | Original full-size photo the portrait crops were made from |
+| `404.html`, `robots.txt`, `sitemap.xml`, `favicon.svg`, `favicon-32.png`, `apple-touch-icon.png` | Site plumbing |
 
-If you have any trouble, you can go to your repository's Settings tab, navigate to the Pages section in the left sidebar, and ensure that it is set to deploy from the main branch.
+## Common updates
 
-Feel free to use and modify this template for your personal portfolio.
+**Add a conference paper or talk.** In `index.html`, find the right year under "Conference papers and talks" and copy an existing `<li class="entry">` block. To have it appear in the chain of blocks under the introduction, keep these attributes on the `<li>`:
 
+```html
+<li class="entry" id="p-short-id" data-chain data-date="2027-08-12" data-short="AMCIS" data-place="City">
+```
+
+- `data-date` (YYYY-MM-DD) orders the chain.
+- `data-short` and `data-place` are the two words shown on the block.
+- Add `data-state="pending"` for something accepted but not yet presented; it is drawn as a dashed block.
+
+The fingerprints on the blocks are computed in the browser from the entry's text, so nothing else needs editing. When a pending talk has happened, remove `data-state="pending"`, change the status text and dot (`dot--pending` to `dot--done`), and update the sentence about dashed blocks in the chain note.
+
+**Change a status** (for example "Conditionally accepted" to "Accepted"): edit the `entry-status` paragraph of that entry.
+
+**Update the date in the footer** ("Last updated …") and the `lastmod` in `sitemap.xml` whenever content changes.
