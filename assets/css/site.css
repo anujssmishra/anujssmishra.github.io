@@ -355,6 +355,7 @@ button { font: inherit; color: inherit; }
 .chain-note { max-width: 62ch; margin: 0; color: var(--muted); font-size: 0.875rem; }
 
 .chain-scroll {
+  position: relative; /* clips the hidden screen-reader text inside the blocks, so the page itself never scrolls sideways */
   overflow-x: auto;
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
@@ -521,6 +522,8 @@ button { font: inherit; color: inherit; }
 .entry-title { max-width: 72ch; margin: 0 0 0.2rem; font-weight: 600; line-height: 1.4; text-wrap: pretty; }
 .entry-title a { color: var(--ink); text-decoration-color: var(--rule-strong); }
 .entry-title a:hover { color: var(--accent); text-decoration-color: currentColor; }
+.entry-authors { margin: 0 0 0.15rem; font-size: 0.9375rem; line-height: 1.45; }
+.entry-authors strong { font-weight: 650; }
 .entry-venue { margin: 0; color: var(--muted); font-size: 0.9375rem; }
 
 .entry-links {

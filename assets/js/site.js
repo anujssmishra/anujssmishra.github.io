@@ -244,7 +244,7 @@
       // No Web Crypto here (an insecure context): keep the chain, drop the fingerprints.
       chain.querySelectorAll(".block-hash").forEach(function (h) { h.remove(); });
       var note = document.querySelector(".chain-note");
-      if (note) note.textContent = "Dashed blocks are scheduled for Lisbon in December 2026.";
+      if (note) note.hidden = true;
       reveal();
       return;
     }

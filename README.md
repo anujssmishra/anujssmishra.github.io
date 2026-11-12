@@ -30,7 +30,13 @@ It is a single static page with no build step: plain HTML, one stylesheet and on
 - `data-short` and `data-place` are the two words shown on the block.
 - Add `data-state="pending"` for something accepted but not yet presented; it is drawn as a dashed block.
 
-The fingerprints on the blocks are computed in the browser from the entry's text, so nothing else needs editing. When a pending talk has happened, remove `data-state="pending"`, change the status text and dot (`dot--pending` to `dot--done`), and update the sentence about dashed blocks in the chain note.
+The fingerprints on the blocks are computed in the browser from the entry's text, so nothing else needs editing. If you add a pending entry, add a sentence to the chain note (`.chain-note`) saying what dashed blocks mean. When the talk has happened, remove `data-state="pending"`, change the status text and dot (`dot--pending` to `dot--done`), and remove that sentence.
+
+**Authors.** Each entry has an author line under its title, with your name in bold:
+
+```html
+<p class="entry-authors"><strong>Anuj S.S. Mishra</strong>, Arunabha Mukhopadhyay</p>
+```
 
 **Change a status** (for example "Conditionally accepted" to "Accepted"): edit the `entry-status` paragraph of that entry.
 
